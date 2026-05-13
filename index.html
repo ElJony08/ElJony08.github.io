@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKEA EL REGALO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <div class="login-card">
+        <h2>🥳ZORIONAK MARKEL🥳</h2>
+        <h3 id="mensaje">Ya sabes, si quieres tu regalo, antes inicias sesión mostro</h3>
+        
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="email">Aquí un correo como este</label>
+                <input type="email" id="correo" placeholder="Pijo@Deusto.com" required>
+            </div>
+
+            <div class="input-group" id="bloquecontra" style="display: none;">
+                <label for="password">Y aquí la contra</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="Pass123" required>
+                    <button type="button" id="togglePassword" class="eye-btn">
+                        <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <button type="button" id="Entrar" class="login-btn" onclick="desvelarcontra(document.getElementById('correo').value)">Entrar</button>
+            <button type="button" id="Ahorasi" class="login-btn" onclick="contrasena(document.getElementById('password').value)" style="display: none;">Ahora sí</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
