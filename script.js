@@ -52,7 +52,7 @@ function desvelarcontra(correoe){
 function contrasena(contra){
     
     if(contra == 'Macacopaga'){
-        open('https://canva.link/u2loltmdwtnt1ak', '_blank');
+        open('https://canva.link/cqvkxefvr3eepy8', '_blank');
     }else{
         contador = contador + 1
     }
